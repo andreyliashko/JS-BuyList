@@ -1,15 +1,29 @@
 body {
    background-color:gainsboro;
+    margin:none;
 }
 .box1{
+     margin: 10px;
     width:750px;
    height: auto;
-    margin-left: 100px;
-    margin-top: 100px;
-  
    background-color:white; 
     border-radius: 3px;
+   
+    float: left;
   
+}
+.box2{
+     margin: 10px;
+    width: 400px;
+    height: auto;
+   background-color:white; 
+    border-radius: 3px;
+     float: left;
+}
+.screen{
+    width:100%;
+    height: 100%;
+    background-color: gainsboro;
 }
 input[type="text"] {
     
@@ -22,7 +36,7 @@ input[type="text"] {
   border-radius: 5px;
   box-sizing: border-box;
 }
-input[type="button"]{
+button.button1{
     border:none;
     color:white;
      font-size: 16px;
@@ -96,15 +110,7 @@ button.button5{
     border-radius: 3px;
 }
    
-.box2{
-    width: 400px;
-    height: auto;
-    margin-left: 900px;
-    margin-top:-235px;
-   background-color:white; 
-    border-radius: 3px;
-  
-}
+
 input[type="text1"] {
   width: 80%;  
   padding: 10px 10px;
@@ -136,4 +142,82 @@ button.button7{
     width:25px;
     height:25px;
     border-radius: 15px;
+}
+
+.creator{
+    width:100%;
+    height:50%;
+    font-size:17px;
+    text-align:left;
+}
+input[type="text12"]{
+    width:98%;
+    height:50%;
+   text-align: center;
+    font-size: 16px;
+    
+}
+button { 
+  position: relative;
+}
+button::after{
+    transition:all 0.4s ease-in-out;
+    position: absolute;
+    bottom:100%;
+    left:100%;
+    z-index: 1;
+   
+    visibility: hidden;
+    width: 60px;
+    height: 0;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: blueviolet;
+     content: attr(data);
+    
+}
+button:hover::after{
+    text-align: center;
+    visibility: visible;
+    height:25px;
+    font-size:15px;
+    color:white;
+}
+.badge1{
+     position: absolute;
+    transition: 1s ease-in-out;
+    border-radius: 3px;
+    color:white;
+    bottom: -65px;
+    left: 400px;
+    float: left;
+    width:200px;
+    height:100px;
+    background-color: blueviolet;
+    
+}
+.badge1:hover{
+   transition: 1s ease-in-out;
+   bottom: 5px;
+    background-color: orangered;
+
+}
+
+
+.badgeText,.badgeAuthor{
+   
+    font-size: 25px;
+    text-align: center;
+    padding-top: 4px;
+}
+@media print{
+    .badge1{
+        background-color: white;
+        border:1 px solid blueviolet;
+        color:black;
+        
+    }
+    .bagdeText{
+       visibility: hidden;
+    }
 }
