@@ -3,8 +3,9 @@ body {
     margin:none;
 }
 .box1{
-     margin: 10px;
-    width:750px;
+     margin: 0.5%;
+   width:60%;
+    min-width: 500px;
    height: auto;
    background-color:white; 
     border-radius: 3px;
@@ -13,8 +14,9 @@ body {
   
 }
 .box2{
-     margin: 10px;
-    width: 400px;
+     margin:0.5%;
+    width: 33%;
+    min-width:313px;
     height: auto;
    background-color:white; 
     border-radius: 3px;
@@ -48,6 +50,7 @@ button.button1{
     border-radius: 5px;
 }
 input[type="text2"] {
+   
  border: none;
   width: 30%;  
   padding: 5px 10px;
@@ -58,11 +61,13 @@ input[type="text2"] {
 .column{
   padding: 10px;
    border-bottom: 1px solid black;
+     position:relative;
 }
 button.button2{
+    position:absolute;
+    left:37%;
     border:none;
     color:white;
-    margin-left:10%;
     background-color: darkred;
     font-size:20px;
     width:25px;
@@ -70,6 +75,8 @@ button.button2{
     border-radius: 15px;
 }
 button.button3{
+    position:absolute;
+    left:48%;
      border:none;
     color:white;
    
@@ -80,6 +87,8 @@ button.button3{
     border-radius: 15px;
 }
 input[type="text3"] {
+  position:absolute;
+  left:42%;
   border:none;
   width: 30px;
   padding: 5px 9px;
@@ -90,18 +99,19 @@ input[type="text3"] {
   box-sizing: border-box;
 }
 button.button4{
+     position:absolute;
+   right:8%;
     border:none;
     color:black;
     font-size: 20px;
     background-color: gainsboro;
     width: 80px;
     height: 30px;
-   
-    margin-left: 30%;
 }
 button.button5{
+    position:absolute;
+   right:2%;
      border:none;
-    
     color:white;
     background-color: darkred;
    font-size:20px;
@@ -121,7 +131,9 @@ input[type="text1"] {
   box-sizing: border-box;
 }
 button.button6{
-    margin-left: 3px;
+    position: relative;
+    
+    margin-left: 10px;
     border:none;
      border-radius: 3px;
     color:black;
@@ -131,17 +143,19 @@ button.button6{
     background-color: gainsboro;
     width: 100px;
     height: 30px;
+    box-sizing: border-box;
     
 }
 button.button7{
     border:none;
     color:white;
-    margin-left:-32px;
+    margin-left:-35px;
     background-color: darkorange;
     font-size:10px;
     width:25px;
     height:25px;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 .creator{
@@ -212,12 +226,19 @@ button:hover::after{
 }
 @media print{
     .badge1{
-        background-color: white;
-        border:1 px solid blueviolet;
-        color:black;
+        border: 1px solid blueviolet !important;
+        border-radius: 3px;
+    }
+    .badgeText{
+       display:none !important;
+        color: black !important;
         
     }
-    .bagdeText{
-       visibility: hidden;
+    .print{
+        visibility: visible!important;
     }
+    
+}
+.print{
+    visibility: hidden!important;
 }
