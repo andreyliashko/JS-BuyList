@@ -17,6 +17,7 @@ body {
      margin:0.5%;
     width: 33%;
     min-width:313px;
+    max-width:360px;
     height: auto;
    background-color:white; 
     border-radius: 3px;
@@ -99,8 +100,8 @@ input[type="text3"] {
   box-sizing: border-box;
 }
 button.button4{
-     position:absolute;
-   right:8%;
+    position:absolute;
+    right:8%;
     border:none;
     color:black;
     font-size: 20px;
@@ -110,12 +111,12 @@ button.button4{
 }
 button.button5{
     position:absolute;
-   right:2%;
-     border:none;
+    right:2%;
+    border:none;
     color:white;
     background-color: darkred;
-   font-size:20px;
-   width:30px;
+    font-size:20px;
+    width:30px;
     height:30px;
     border-radius: 3px;
 }
@@ -126,30 +127,28 @@ input[type="text1"] {
   padding: 10px 10px;
   font-size: 16px;
   color:solid black;
-    
   border:none;
   box-sizing: border-box;
 }
-button.button6{
+.button6{
+    display: inline-block;
+    margin:5px;
     position: relative;
-    
-    margin-left: 10px;
-    border:none;
-     border-radius: 3px;
+    border-radius: 3px;
     color:black;
-    font-size: 12px;
+    font-size: 20px;
     text-align: left;
-    padding-right: 10px;
     background-color: gainsboro;
     width: 100px;
     height: 30px;
-    box-sizing: border-box;
     
 }
-button.button7{
+.button7{
+    top:2px;
+    position: absolute;
+    right:3px;
     border:none;
     color:white;
-    margin-left:-35px;
     background-color: darkorange;
     font-size:10px;
     width:25px;
@@ -180,7 +179,6 @@ button::after{
     bottom:100%;
     left:100%;
     z-index: 1;
-   
     visibility: hidden;
     width: 60px;
     height: 0;
@@ -191,6 +189,7 @@ button::after{
     
 }
 button:hover::after{
+   
     text-align: center;
     visibility: visible;
     height:25px;
