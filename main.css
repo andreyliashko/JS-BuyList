@@ -28,7 +28,7 @@ body {
     height: 100%;
     background-color: gainsboro;
 }
-input[type="text"] {
+.inputText{
     
   margin:10px;
   width: 80%;  
@@ -39,6 +39,19 @@ input[type="text"] {
   border-radius: 5px;
   box-sizing: border-box;
 }
+.inputText2{
+    visibility: hidden;
+    position: absolute;
+    left:20px;
+   display: inline-block;
+    width: 15%;  
+  font-size: 16px;
+  color: grey;
+  border: 1px solid darkcyan ;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 button.button1{
     border:none;
     color:white;
@@ -50,30 +63,41 @@ button.button1{
     padding: 10px 10px;
     border-radius: 5px;
 }
-input[type="text2"] {
-   
- border: none;
+.sp{
+    font-size: 16px;
+    color: grey;
+}
+.text2 {
+  border-radius: 3px;
+  display: inline-block;
+  border: none;
   width: 30%;  
   padding: 5px 10px;
-  font-size: 16px;
-  color: grey;
+  border:1px solid dimgrey;
+    
   box-sizing: border-box;
 }
-.column{
-  padding: 10px;
+.column , .column2{
+    height:auto;
+   min-height:30px;
+   padding: 10px;
    border-bottom: 1px solid black;
-     position:relative;
+   position:relative;
 }
 button.button2{
     position:absolute;
     left:37%;
     border:none;
     color:white;
-    background-color: darkred;
+    background-color: lightcoral;
     font-size:20px;
     width:25px;
     height:25px;
     border-radius: 15px;
+}
+.amountOfProduct , .amountOfProduct2{
+    font-size: 16px;
+    
 }
 button.button3{
     position:absolute;
@@ -87,7 +111,9 @@ button.button3{
     height:25px;
     border-radius: 15px;
 }
-input[type="text3"] {
+.text3 {
+    text-align: center;
+  display: inline-block;
   position:absolute;
   left:42%;
   border:none;
@@ -139,14 +165,16 @@ input[type="text1"] {
     font-size: 20px;
     text-align: left;
     background-color: gainsboro;
-    width: 100px;
+    min-width: 100px;
+    width:auto;
     height: 30px;
     
 }
 .button7{
-    top:2px;
-    position: absolute;
-    right:3px;
+    text-align: center;
+    display:inline-block;
+    margin:3px;
+    float:right; 
     border:none;
     color:white;
     background-color: darkorange;
@@ -156,7 +184,18 @@ input[type="text1"] {
     border-radius: 15px;
     box-sizing: border-box;
 }
-
+button.not_buy{
+    visibility: hidden;
+   position:absolute;
+    right:2%;
+    border:none;
+    color:black;
+    font-size: 20px;
+    background-color: gainsboro;
+    width: 120px;
+    height: 30px;
+    
+}
 .creator{
     width:100%;
     height:50%;
@@ -174,7 +213,7 @@ button {
   position: relative;
 }
 button::after{
-    transition:all 0.4s ease-in-out;
+    transition:all 0.1s ease-in-out;
     position: absolute;
     bottom:100%;
     left:100%;
